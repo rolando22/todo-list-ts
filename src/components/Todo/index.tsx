@@ -8,10 +8,14 @@ interface Props {
 
 export const Todo: React.FC<Props> = ({ id, title, completed}) => {
     return (
-        <div>
-            <input type='checkbox' />
+        <div className='view'>
+            <input 
+                className='toggle'
+                type='checkbox' 
+                checked={completed}
+                />
             <label>{title}</label>
-            <button>X</button>
+            <button className='destroy'></button>
         </div>
     );
 };

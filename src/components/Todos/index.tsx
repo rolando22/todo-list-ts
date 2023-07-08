@@ -9,7 +9,7 @@ interface Props {
 export const Todos: React.FC<Props> = ({ todos }) => {
     return (
         <section>
-            <ul>
+            <ul className='todo-list'>
                 {todos.map(todo => 
                     <li key={todo.id}>
                         <Todo 

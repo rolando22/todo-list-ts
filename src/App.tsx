@@ -20,7 +20,7 @@ const mockTodos = [
 
 export const App = (): JSX.Element => {
     return (
-        <main>
+        <main className='todoapp'>
             <Todos todos={mockTodos} />
         </main>
     );
