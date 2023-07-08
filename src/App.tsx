@@ -1,5 +1,27 @@
-export function App() {
+import { Todos } from './components/';
+
+const mockTodos = [
+    {
+        id: '0', 
+        title: 'Title 1',
+        completed: true,
+    },
+    {
+        id: '1', 
+        title: 'Title 2',
+        completed: false,
+    },
+    {
+        id: '2', 
+        title: 'Title 3',
+        completed: false,
+    },
+];
+
+export const App = (): JSX.Element => {
     return (
-        <h1>TODO List</h1>
+        <main>
+            <Todos todos={mockTodos} />
+        </main>
     );
 }
