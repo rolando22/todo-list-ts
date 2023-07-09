@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 import { Todos } from './components/';
+import { TodoTypeId } from './types';
 
 const mockTodos = [
     {
@@ -19,9 +22,19 @@ const mockTodos = [
 ];
 
 export const App = (): JSX.Element => {
+    const [todos, setTodos] = useState(mockTodos);
+
+    const onRemoveTodo = ({ id }: TodoTypeId) => {
+        const newTodos = todos.filter(todo => todo.id !== id);
+        setTodos(newTodos);
+    };
+
     return (
         <main className='todoapp'>
-            <Todos todos={mockTodos} />
+            <Todos 
+                todos={todos} 
+                onRemoveTodo={onRemoveTodo}
+            />
         </main>
     );
 }
