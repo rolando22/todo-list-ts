@@ -1,24 +1,7 @@
 import { useState } from "react";
 
 import type { TodoList, Todo as TodoType, TodoTypeId, TodoTypeTitle } from "../types";
-
-const mockTodos = [
-    {
-        id: '0', 
-        title: 'Title 1',
-        completed: true,
-    },
-    {
-        id: '1', 
-        title: 'Title 2',
-        completed: false,
-    },
-    {
-        id: '2', 
-        title: 'Title 3',
-        completed: false,
-    },
-];
+import { mockTodos } from "../mocks/todos";
 
 export const useTodos = (): {
     todos: TodoList,
