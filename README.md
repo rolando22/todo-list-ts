@@ -8,5 +8,6 @@ Este repositorio contiene el código de un aplicación para registrar tareas, ma
 - Vite como empaquetador y SWC como transpilador.
 - TypeScript para el tipado del código.
 - Uso de customHooks para el manejo del estado de las tareas.
+- Librería todomvc-app-css para los estilos.
 
-Puedes ver el demo aquí: (https://rolando22.github.io/todo-machine/).
+Puedes ver el demo aquí: (https://rolando22.github.io/todo-list-ts/).
