@@ -20,7 +20,7 @@ export const FormCreateTodo: React.FC<Props> = ({ onAddTodo }) => {
     }
 
     return (
-        <form onSubmit={handlerOnSubmitFormAddTodo}>
+        <form role='form' onSubmit={handlerOnSubmitFormAddTodo}>
             <input 
                 className='new-todo'
                 type='text' 
